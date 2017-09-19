@@ -6,7 +6,7 @@ var sec = "YOUR_SECRET_ID"
 var params = "?client_id" + id + "&client_secret=" + sec;
 
 function getProfile(username) {
-    return axios.get('https://api.github.com/users/' + usersname + params)
+    return axios.get('https://api.github.com/users/' + username + params)
                 .then(function(user){
                     return user.data;
                 });
